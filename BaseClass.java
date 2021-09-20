@@ -15,8 +15,8 @@ import utils.Dp;
 public class BaseClass{
 	public ChromeDriver driver;
 	public static String SheetName;
+
 	@DataProvider
-	
 	  public static String[][] sendData() throws IOException { 
 		return Dp.POI(SheetName); 
 		}

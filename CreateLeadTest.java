@@ -1,13 +1,14 @@
 package testcases;
 
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import base.BaseClass;
 import pages.clickCreateLead;
 
 public class CreateLeadTest extends BaseClass{
-	@BeforeClass
+	@BeforeTest
 	public void setSheetName() {
 		SheetName="create";
 	}

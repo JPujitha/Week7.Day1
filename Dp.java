@@ -13,7 +13,7 @@ public class Dp extends BaseClass{
 	@DataProvider
 	public static String[][] POI(String SheetName) throws IOException {
 		// TODO Auto-generated method stub
-		XSSFWorkbook wb1 = new XSSFWorkbook("./data/CreateLead.xlsx");
+		XSSFWorkbook wb1 = new XSSFWorkbook("./data/CreateLeadExcel.xlsx");
 		XSSFSheet ws1 = wb1.getSheet(SheetName);
 		//get row count
 		int rc = ws1.getLastRowNum();

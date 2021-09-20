@@ -1,18 +1,19 @@
 package testcases;
 
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import base.BaseClass;
 import pages.FindLeads;
 
 public class DuplicateTest extends BaseClass {
-	@BeforeClass
+	@BeforeTest
 	public void setSheetName() {
 		SheetName="delete";
 	}
 	@Test(dataProvider="sendData")
-	public void DuplicateLead(String phon) throws InterruptedException {
+	public void duplicateLead(String phon) throws InterruptedException {
 		new FindLeads(driver)
 		.clickFindLead()
 		.m2()

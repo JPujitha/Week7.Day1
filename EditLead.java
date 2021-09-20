@@ -13,8 +13,8 @@ public class EditLead extends BaseClass{
 	driver.findElement(By.xpath("//span[text()='Phone']")).click();
 	return this;
 	}
-	public EditLead givephone(String phn) {
-	driver.findElement(By.xpath("//input[@name='phoneNumber']")).sendKeys(phn);
+	public EditLead givephone(String ephn) {
+	driver.findElement(By.xpath("//input[@name='phoneNumber']")).sendKeys(ephn);
 	return this;
 	}
 	public EditLead clickfind() throws InterruptedException {
@@ -30,8 +30,8 @@ public class EditLead extends BaseClass{
 	driver.findElement(By.linkText("Edit")).click();
 	return this;
 	}
-	public EditLead updatecmpny(String cmpny) {
-	driver.findElement(By.id("updateLeadForm_companyName")).sendKeys(cmpny);
+	public EditLead updatecmpny(String ecmpny) {
+	driver.findElement(By.id("updateLeadForm_companyName")).sendKeys(ecmpny);
 	return this;
 	}
 	public EditLead submit() {
