@@ -10,11 +10,10 @@ import base.BaseClass;
 
 public class Dp extends BaseClass{
 
-	@DataProvider
 	public static String[][] POI(String SheetName) throws IOException {
 		// TODO Auto-generated method stub
-		XSSFWorkbook wb1 = new XSSFWorkbook("./data/CreateLeadExcel.xlsx");
-		XSSFSheet ws1 = wb1.getSheet(SheetName);
+		XSSFWorkbook wb1 = new XSSFWorkbook("./data/"+SheetName+".xlsx");
+		XSSFSheet ws1 = wb1.getSheet("sheet1");
 		//get row count
 		int rc = ws1.getLastRowNum();
 		//get column count
@@ -28,7 +27,7 @@ public class Dp extends BaseClass{
 			}
 }
 		wb1.close();
-		System.out.println("Create inputs are : " + D);
+		//System.out.println("Create inputs are : " + D);
 		return D;
 	
 	}

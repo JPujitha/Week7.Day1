@@ -26,5 +26,4 @@ public class FindLeads extends BaseClass{
 		return new DeleteLead(driver);
 	}
 	
-
 }

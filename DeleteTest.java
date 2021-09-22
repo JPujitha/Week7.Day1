@@ -1,6 +1,5 @@
 package testcases;
 
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 

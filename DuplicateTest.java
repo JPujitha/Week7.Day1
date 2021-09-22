@@ -1,6 +1,5 @@
 package testcases;
 
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -10,18 +9,12 @@ import pages.FindLeads;
 public class DuplicateTest extends BaseClass {
 	@BeforeTest
 	public void setSheetName() {
-		SheetName="delete";
+		SheetName = "delete";
 	}
-	@Test(dataProvider="sendData")
+
+	@Test(dataProvider = "sendData")
 	public void duplicateLead(String phon) throws InterruptedException {
-		new FindLeads(driver)
-		.clickFindLead()
-		.m2()
-		.clickphone()
-		.givephn(phon)
-		.findl()
-		.clickl()
-		.clickdup().submit();
+		new FindLeads(driver).clickFindLead().m2().clickphone().givephn(phon).findl().clickl().clickdup().submit();
 	}
 
 }
